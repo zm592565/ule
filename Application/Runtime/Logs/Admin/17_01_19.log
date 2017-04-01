@@ -1,0 +1,6 @@
+[ 2017-01-19T09:20:24+08:00 ] 127.0.0.1 /ule/Admin/Login/login
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ule.auth_group_access' doesn't exist
+
+[ 2017-01-19T09:20:55+08:00 ] 127.0.0.1 /ule/Admin/Login/login
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ule.auth_group_access' doesn't exist
+

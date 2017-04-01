@@ -1,0 +1,408 @@
+[ 2017-04-01T15:21:28+08:00 ] 127.0.0.1 /ule/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000757s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001068s ]
+
+[ 2017-04-01T15:21:28+08:00 ] 127.0.0.1 /ule/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000645s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000938s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001081s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018329s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018472s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000649s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000732s ]
+
+[ 2017-04-01T15:21:28+08:00 ] 127.0.0.1 /ule/Admin/Login/VerifyImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000717s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000829s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000680s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000789s ]
+
+[ 2017-04-01T15:21:34+08:00 ] 127.0.0.1 /ule/Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000756s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000855s ]
+SQL: SHOW COLUMNS FROM `sto_admin` [ RunTime:0.0164s ]
+SQL: SELECT * FROM `sto_admin` WHERE `user` = 'zm592565' AND `pass` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0086s ]
+SQL: UPDATE `sto_admin` SET `last_time`='2017-04-01 15:21:34',`last_ip`='127.0.0.1',`login_count`='42' WHERE `id` = 46 [ RunTime:0.0246s ]
+SQL: SHOW COLUMNS FROM `sto_auth_group_access` [ RunTime:0.0241s ]
+SQL: SELECT b.title,a.group_id FROM sto_auth_group_access a,sto_auth_group b WHERE ( a.uid=46 AND a.group_id=b.id ) LIMIT 1   [ RunTime:0.0024s ]
+
+[ 2017-04-01T15:21:34+08:00 ] 127.0.0.1 /ule/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000562s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: wuliu F:\wamp\www\ule\Application\Runtime\Cache\5003fa0c88815279fa2c6a00bd6ce378ddabc8e1.file.left_menu.html.php 第 131 行.
+NOTIC: [8] Trying to get property of non-object F:\wamp\www\ule\Application\Runtime\Cache\5003fa0c88815279fa2c6a00bd6ce378ddabc8e1.file.left_menu.html.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023523s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023612s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000403s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000473s ]
+
+[ 2017-04-01T15:21:34+08:00 ] 127.0.0.1 /ule/Admin/Index/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012562s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012653s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000476s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000665s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000746s ]
+
+[ 2017-04-01T15:21:36+08:00 ] 127.0.0.1 /ule/Admin/Banner/bannerlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000844s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001258s ]
+SQL: SHOW COLUMNS FROM `sto_bclass` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `sto_bclass`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: count F:\wamp\www\ule\Application\Runtime\Cache\8c7bd804e9fa34956b68dc8bad3b1978135e54a3.file.bannerlist.html.php 第 40 行.
+NOTIC: [8] Trying to get property of non-object F:\wamp\www\ule\Application\Runtime\Cache\8c7bd804e9fa34956b68dc8bad3b1978135e54a3.file.bannerlist.html.php 第 40 行.
+NOTIC: [8] Undefined index: page F:\wamp\www\ule\Application\Runtime\Cache\8c7bd804e9fa34956b68dc8bad3b1978135e54a3.file.bannerlist.html.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object F:\wamp\www\ule\Application\Runtime\Cache\8c7bd804e9fa34956b68dc8bad3b1978135e54a3.file.bannerlist.html.php 第 91 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022111s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022198s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000406s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000475s ]
+
+[ 2017-04-01T15:21:36+08:00 ] 127.0.0.1 /ule/Admin/Banner/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000505s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000680s ]
+SQL: SHOW COLUMNS FROM `sto_bclass` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `sto_bclass`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011706s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011802s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000381s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000529s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000614s ]
+
+[ 2017-04-01T15:21:36+08:00 ] 127.0.0.1 /ule/Admin/News/page_wel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000648s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023640s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023738s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000532s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000632s ]
+
+[ 2017-04-01T15:21:37+08:00 ] 127.0.0.1 /ule/Admin/Banner/bannerdata/id/10.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000791s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001065s ]
+SQL: SHOW COLUMNS FROM `sto_bclass` [ RunTime:0.0087s ]
+SQL: SELECT * FROM `sto_bclass` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sto_banner` [ RunTime:0.0069s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sto_banner` WHERE ( banner_class=10 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `sto_banner` WHERE ( banner_class=10 ) ORDER BY id asc LIMIT 0,20   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028923s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029013s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000480s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000557s ]
+
+[ 2017-04-01T15:21:38+08:00 ] 127.0.0.1 /ule/Admin/Banner/addbanner/id/10.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000907s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001258s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: rs F:\wamp\www\ule\Application\Runtime\Cache\85a3b0efb190c250a7908fb8faa1782e7cb62502.file.addbanner.html.php 第 43 行.
+NOTIC: [8] Trying to get property of non-object F:\wamp\www\ule\Application\Runtime\Cache\85a3b0efb190c250a7908fb8faa1782e7cb62502.file.addbanner.html.php 第 43 行.
+NOTIC: [8] Undefined index: rs F:\wamp\www\ule\Application\Runtime\Cache\85a3b0efb190c250a7908fb8faa1782e7cb62502.file.addbanner.html.php 第 50 行.
+NOTIC: [8] Trying to get property of non-object F:\wamp\www\ule\Application\Runtime\Cache\85a3b0efb190c250a7908fb8faa1782e7cb62502.file.addbanner.html.php 第 50 行.
+NOTIC: [8] Undefined index: rs F:\wamp\www\ule\Application\Runtime\Cache\85a3b0efb190c250a7908fb8faa1782e7cb62502.file.addbanner.html.php 第 57 行.
+NOTIC: [8] Trying to get property of non-object F:\wamp\www\ule\Application\Runtime\Cache\85a3b0efb190c250a7908fb8faa1782e7cb62502.file.addbanner.html.php 第 57 行.
+NOTIC: [8] Undefined index: rs F:\wamp\www\ule\Application\Runtime\Cache\85a3b0efb190c250a7908fb8faa1782e7cb62502.file.addbanner.html.php 第 74 行.
+NOTIC: [8] Trying to get property of non-object F:\wamp\www\ule\Application\Runtime\Cache\85a3b0efb190c250a7908fb8faa1782e7cb62502.file.addbanner.html.php 第 74 行.
+NOTIC: [8] Undefined index: rs F:\wamp\www\ule\Application\Runtime\Cache\85a3b0efb190c250a7908fb8faa1782e7cb62502.file.addbanner.html.php 第 84 行.
+NOTIC: [8] Trying to get property of non-object F:\wamp\www\ule\Application\Runtime\Cache\85a3b0efb190c250a7908fb8faa1782e7cb62502.file.addbanner.html.php 第 84 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.067103s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067220s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000534s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000624s ]
+
+[ 2017-04-01T15:21:39+08:00 ] 127.0.0.1 /ule/Admin/Common/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000576s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000648s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033293s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033401s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000465s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000430s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000498s ]
+
+[ 2017-04-01T15:22:00+08:00 ] 127.0.0.1 /ule/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000440s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: wuliu F:\wamp\www\ule\Application\Runtime\Cache\5003fa0c88815279fa2c6a00bd6ce378ddabc8e1.file.left_menu.html.php 第 131 行.
+NOTIC: [8] Trying to get property of non-object F:\wamp\www\ule\Application\Runtime\Cache\5003fa0c88815279fa2c6a00bd6ce378ddabc8e1.file.left_menu.html.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012210s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012290s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000471s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000541s ]
+
+[ 2017-04-01T15:22:00+08:00 ] 127.0.0.1 /ule/Admin/Index/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010863s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010990s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000678s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000560s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000644s ]
+
+[ 2017-04-01T15:22:04+08:00 ] 127.0.0.1 /ule/Admin/FeedBack/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000827s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000576s ]
+SQL: SHOW COLUMNS FROM `sto_message` [ RunTime:0.0196s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `sto_message` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sto_member` [ RunTime:0.0182s ]
+SQL: SELECT s.id,s.message_info,s.state,s.add_time,m.member_name,s.admire FROM `sto_member` `m`,`sto_message` `s` WHERE ( s.user_id=m.id ) ORDER BY add_time desc LIMIT 0,20   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016420s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016502s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000569s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000647s ]
+
+[ 2017-04-01T15:22:05+08:00 ] 127.0.0.1 /ule/Admin/Banner/bannerlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000731s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000787s ]
+SQL: SHOW COLUMNS FROM `sto_bclass` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `sto_bclass`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: count F:\wamp\www\ule\Application\Runtime\Cache\8c7bd804e9fa34956b68dc8bad3b1978135e54a3.file.bannerlist.html.php 第 40 行.
+NOTIC: [8] Trying to get property of non-object F:\wamp\www\ule\Application\Runtime\Cache\8c7bd804e9fa34956b68dc8bad3b1978135e54a3.file.bannerlist.html.php 第 40 行.
+NOTIC: [8] Undefined index: page F:\wamp\www\ule\Application\Runtime\Cache\8c7bd804e9fa34956b68dc8bad3b1978135e54a3.file.bannerlist.html.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object F:\wamp\www\ule\Application\Runtime\Cache\8c7bd804e9fa34956b68dc8bad3b1978135e54a3.file.bannerlist.html.php 第 91 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013318s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013430s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000808s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000552s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000636s ]
+
+[ 2017-04-01T15:22:06+08:00 ] 127.0.0.1 /ule/Admin/Banner/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000633s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000685s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000807s ]
+SQL: SHOW COLUMNS FROM `sto_bclass` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `sto_bclass`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013178s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013284s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000518s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000581s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000673s ]
+
+[ 2017-04-01T15:22:06+08:00 ] 127.0.0.1 /ule/Admin/News/page_wel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000528s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000627s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013281s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013415s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000647s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000622s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000707s ]
+
+[ 2017-04-01T15:22:06+08:00 ] 127.0.0.1 /ule/Admin/Banner/bannerdata/id/10.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000586s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000694s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000835s ]
+SQL: SHOW COLUMNS FROM `sto_bclass` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `sto_bclass` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `sto_banner` [ RunTime:0.0079s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sto_banner` WHERE ( banner_class=10 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `sto_banner` WHERE ( banner_class=10 ) ORDER BY id asc LIMIT 0,20   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016891s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017021s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000664s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000738s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000855s ]
+
+[ 2017-04-01T15:22:07+08:00 ] 127.0.0.1 /ule/Admin/Banner/addbanner/id/10.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000691s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000764s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000921s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: rs F:\wamp\www\ule\Application\Runtime\Cache\85a3b0efb190c250a7908fb8faa1782e7cb62502.file.addbanner.html.php 第 43 行.
+NOTIC: [8] Trying to get property of non-object F:\wamp\www\ule\Application\Runtime\Cache\85a3b0efb190c250a7908fb8faa1782e7cb62502.file.addbanner.html.php 第 43 行.
+NOTIC: [8] Undefined index: rs F:\wamp\www\ule\Application\Runtime\Cache\85a3b0efb190c250a7908fb8faa1782e7cb62502.file.addbanner.html.php 第 50 行.
+NOTIC: [8] Trying to get property of non-object F:\wamp\www\ule\Application\Runtime\Cache\85a3b0efb190c250a7908fb8faa1782e7cb62502.file.addbanner.html.php 第 50 行.
+NOTIC: [8] Undefined index: rs F:\wamp\www\ule\Application\Runtime\Cache\85a3b0efb190c250a7908fb8faa1782e7cb62502.file.addbanner.html.php 第 57 行.
+NOTIC: [8] Trying to get property of non-object F:\wamp\www\ule\Application\Runtime\Cache\85a3b0efb190c250a7908fb8faa1782e7cb62502.file.addbanner.html.php 第 57 行.
+NOTIC: [8] Undefined index: rs F:\wamp\www\ule\Application\Runtime\Cache\85a3b0efb190c250a7908fb8faa1782e7cb62502.file.addbanner.html.php 第 74 行.
+NOTIC: [8] Trying to get property of non-object F:\wamp\www\ule\Application\Runtime\Cache\85a3b0efb190c250a7908fb8faa1782e7cb62502.file.addbanner.html.php 第 74 行.
+NOTIC: [8] Undefined index: rs F:\wamp\www\ule\Application\Runtime\Cache\85a3b0efb190c250a7908fb8faa1782e7cb62502.file.addbanner.html.php 第 84 行.
+NOTIC: [8] Trying to get property of non-object F:\wamp\www\ule\Application\Runtime\Cache\85a3b0efb190c250a7908fb8faa1782e7cb62502.file.addbanner.html.php 第 84 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019071s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019202s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000381s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000453s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000482s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000558s ]
+
+[ 2017-04-01T15:22:08+08:00 ] 127.0.0.1 /ule/Admin/Common/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000819s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014905s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015019s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000954s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001039s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000565s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000653s ]
+
+[ 2017-04-01T15:22:10+08:00 ] 127.0.0.1 /ule/Admin/Common/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001151s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001240s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001460s ]
+
+[ 2017-04-01T15:22:11+08:00 ] 127.0.0.1 /ule/Admin/Common/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000682s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001099s ]
+

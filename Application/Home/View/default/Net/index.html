@@ -1,0 +1,126 @@
+		{$header}
+		
+
+	
+		<div class="list_banner">
+			<div class="list_banner_p content">
+				<p>查询</p>
+				<div class="bread">业务查询 > 网点查询</div>
+			</div>
+		</div>
+		
+		
+		<div class="show content clearfix">
+			
+			<div class="list_nav clearfix" style="margin-top: 0px;">
+				<div class="nav_title">快捷导航</div>
+					<ul class="clearfix">
+						{if $qucik}
+							{foreach $qucik as $value}
+								<li><a href="{$value.url}">{$value.class_name}</a></li>
+							{/foreach}
+
+						{else}
+							<li>暂无数据</li>
+						{/if}
+					</ul>
+				</div>
+			<div
+			<div class="list_text clearfix" style="border: 1px solid #eee;margin-top:0px; width: 926px">
+
+				<div class="page_title">网点查询</div>
+				<div class="page_content">
+					
+						
+					<!--
+                	作者：zm592565@163.com
+                	时间：2016-10-12
+                	描述：网点列表
+                    -->
+					<div id="net">
+						<img src="{$smarty.const.HOME_IMG_PATH}net.jpg" />
+						
+						<ul class="clearfix">
+
+						{if $rs}
+
+
+							{foreach $rs as $key=>$value}
+
+							<li class="clearfix">
+								<span class="name">{$value.company_cn}</span>
+								<span class="tel">{$value.tel|truncate:40:"...":true}</span>
+								<span class="adress">{if $value['nation']}{$value.nation}.{/if}{$value.city_cn}</span>
+								<a href="javascript:;">查看详情</a>
+								<div class="layer_detail">
+									<ul>
+										<li>网点中文名称：{$value.company_cn}</li>
+										<li>网点英文名称：{$value.company_en}</li>
+										<li>负责人：{$value.charge}</li>
+										<li>客户经理：{$value.manager}</li>
+										<li>联系方式：{$value.tel}</li>
+										<li>所属国家：{$value.nation}</li>
+										<li>所属城市：{$value.city_cn}.{$value.city_en}</li>
+										<li>公司地址：{if $value['address_cn']}{$value.address_cn}-{/if}{$value.address_en}</li>
+									</ul>
+								</div>
+							</li>
+
+
+							{/foreach}
+
+
+						{else}
+							<li class="clearfix">暂无数据</li>
+						{/if}
+
+							
+							
+						</ul>
+						
+						
+					</div>
+
+
+
+
+					
+					
+				</div>
+	
+			</div>
+			
+		</div>
+
+		<script type="text/javascript">
+
+		$(function(){
+
+			$('#net ul li a').click(function(){
+				var ParentIndex=$(this).parent().index();/*获取当前a标签的父级元素的index索引位置*/
+				var DivHide=$('#net ul li div.layer_detail').eq(ParentIndex).html();// 获取当前li标签底下隐藏的div元素
+
+				layer.open({
+				  type: 1,
+				  title:'',
+				  skin: 'layui-layer-demo', //样式类名
+				  closeBtn: 1, //显示关闭按钮
+				  shift: 2,
+				  area: ['540px', 'auto'],
+				  shadeClose: true, //开启遮罩关闭
+				  content: '<div class="layer_detail_show">'+DivHide+'</div>'
+				});
+
+
+
+
+			})
+
+		})
+
+		</script>
+
+
+		{$footer}
+		
+		

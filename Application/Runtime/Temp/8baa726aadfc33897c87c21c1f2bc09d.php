@@ -1,0 +1,3 @@
+<?php
+//000000000000a:5:{i:0;a:3:{s:3:"url";s:24:"/ule/Home/Api/index.html";s:2:"id";i:24;s:10:"class_name";s:12:"业务查询";}i:1;a:3:{s:3:"url";s:33:"/ule/Home/News/pageshow/id/5.html";s:2:"id";i:4;s:10:"class_name";s:12:"关于我们";}i:2;a:3:{s:3:"url";s:34:"/ule/Home/News/pageshow/id/10.html";s:2:"id";i:9;s:10:"class_name";s:12:"国际服务";}i:3;a:3:{s:3:"url";s:34:"/ule/Home/News/pageshow/id/17.html";s:2:"id";i:15;s:10:"class_name";s:12:"客户服务";}i:4;a:3:{s:3:"url";s:25:"/ule/Home/News/index.html";s:2:"id";i:19;s:10:"class_name";s:12:"新闻资讯";}}
+?>

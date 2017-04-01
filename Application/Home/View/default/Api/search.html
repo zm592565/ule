@@ -1,0 +1,223 @@
+		{$header}
+		
+
+	
+		<div class="list_banner">
+			<div class="list_banner_p content">
+				<p>查询</p>
+				<div class="bread">查询 > 包裹追踪</div>
+			</div>
+		</div>
+		
+		
+		<div class="show content clearfix">
+			
+			<div class="list_nav clearfix" style="margin-top: 0px;">
+				<div class="nav_title">快捷导航</div>
+					<ul class="clearfix">
+						{if $qucik}
+							{foreach $qucik as $value}
+								<li><a href="{$value.url}">{$value.class_name}</a></li>
+							{/foreach}
+
+						{else}
+							<li>暂无数据</li>
+						{/if}
+					</ul>
+				</div>
+			<div
+			<div class="list_text clearfix" style="border: 1px solid #eee;margin-top:0px; width: 926px">
+
+				<div class="page_title">包裹追踪</div>
+				<div class="page_content">
+					<form action="http://intl.sto.cn/Home/Api/index.html" method="post" class="clearfix">
+						<textarea id="hero-demo" name="bagNo" style="display: none;"></textarea>
+						<input class="bag_search" type="submit" value="查询" />
+						<button id="clear">清除</button>
+						<div class="search_prompt">包裹查询也可以通过全国统一客服热线：95543，进行查询</div>
+					</form>
+					
+
+					{if $result}
+
+						{foreach $result as $key=>$value}
+
+							{if $value}
+							<div class="info clearfix">
+								<i class="info_icon">运送中</i>
+								<div class="bag_no">运单号：{$key}</div>
+							</div>
+							
+
+							<ul class="info_list clearfix">
+							
+
+								{foreach $value as $values}
+
+								<li>
+									<div class="data_box">{$values.eventDate}</div>
+									<div class="info_show_box">
+
+										{$values.toCustomerSummaryDesc}	
+									
+									
+									</div>
+								</li>
+								{/foreach}
+
+							</ul>
+							{else}
+
+							<div class="info clearfix">
+								<i class="info_icon">无状态</i>
+								<div class="bag_no">运单号：{$key}</div>
+							</div>
+							<ul class="info_list clearfix">
+								<li style="line-height: 35px;text-align: center;">
+									运单表中没有找到对应的运单编号信息，请确认单号是否正确！
+								</li>
+							</ul>
+							{/if}
+							
+							
+
+
+						{/foreach}
+
+
+						
+
+					{/if}
+					
+
+
+					{literal}
+					<style type="text/css">
+
+					table tr td{text-align: left;line-height: 22px;padding-bottom: 20px;font-size: 12px}
+					
+					table tr td p{text-align: left;color: #fe8600;line-height: 25px;}
+					</style>
+					{/literal}
+					
+
+
+					<table style="width: 100%;text-align: left;margin-top: 25px;border-top: 1px dotted #ddd">
+						<tr>
+							<td colspan="6" style="font-size: 20px; color: #666;line-height: 40px;padding-left: 15px;">实时信息精准反馈，在线解决快件异常</td>
+						</tr>
+						<tr>
+							<td align="left" width="90">
+								<img src="{$smarty.const.HOME_IMG_PATH}bag/06.png">
+							</td>
+							<td align="left" width="180">
+								<p>信息详尽</p>
+								提供运单相关发件、收件网点
+								的详尽信息，便于您联系和沟通
+							</td>
+							<td align="left" width="90">
+								<img src="{$smarty.const.HOME_IMG_PATH}bag/05.png">
+							</td>
+							<td align="left" width="180">
+								<p>异常监控</p>
+								如果发生异常，智能判断异常原因，并提供解决方案
+							</td>
+							<td align="left" width="90">
+								<img src="{$smarty.const.HOME_IMG_PATH}bag/04.png">
+							</td>
+							<td align="left" width="180">
+								<p>时效诊断</p>
+								时效诊断和查询，告知您的运单预计哪天到达
+							</td>
+						</tr>
+						<tr>
+							<td><img src="{$smarty.const.HOME_IMG_PATH}bag/01.png"></td>
+							<td>
+								<p>精准反馈</p>
+								个性需求、留言、投诉等诉求，直达快递网点客服、对应快递员
+							</td>
+							<td><img src="{$smarty.const.HOME_IMG_PATH}bag/02.png"></td>
+							<td>
+								<p>实时监测</p>
+								对查询运单，实时监测流转情况，在快件异常、签收时提醒您关注
+							</td>
+							<td><img src="{$smarty.const.HOME_IMG_PATH}bag/03.png"></td>
+							<td>
+								<p>单号同步</p>
+								网站、客户端等同步信息，一个地方查询过的运单号，其他地方也能同时查看
+							</td>
+						</tr>
+						
+					</table>
+
+					
+					
+					
+				</div>
+	
+			</div>
+			
+		</div>
+		
+		
+		
+		
+		<link rel="stylesheet" type="text/css" href="{$smarty.const.HOME_JS_PATH}tag_editor/jquery.tag-editor.css">
+		<script src="{$smarty.const.HOME_JS_PATH}tag_editor/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="{$smarty.const.HOME_JS_PATH}tag_editor/jquery.tag-editor.js"></script>
+		<script type="text/javascript">
+		{literal}
+	
+			(function($){var proto=$.ui.autocomplete.prototype,initSource=proto._initSource;function filter(array,term){var matcher=new RegExp($.ui.autocomplete.escapeRegex(term),"i");return $.grep(array,function(value){return matcher.test($("<div>").html(value.label||value.value||value).text());});}$.extend(proto,{_initSource:function(){if(this.options.html&&$.isArray(this.options.source)){this.source=function(request,response){response(filter(this.options.source,request.term));};}else{initSource.call(this);}},_renderItem:function(ul,item){return $("<li></li>").data("item.autocomplete",item).append($("<a></a>")[this.options.html?"html":"text"](item.label)).appendTo(ul);}});})(jQuery);
+
+        var cache = {};
+        function googleSuggest(request, response) {
+            var term = request.term;
+            if (term in cache) { response(cache[term]); return; }
+            // $.ajax({
+            //     url: 'http://query.yahooapis.com/v1/public/yql',
+            //     dataType: 'JSONP',
+            //     data: { format: 'json', q: 'select * from xml where url="http://google.com/complete/search?output=toolbar&q='+term+'"' },
+            //     success: function(data) {
+            //         var suggestions = [];
+            //         try { var results = data.query.results.toplevel.CompleteSuggestion; } catch(e) { var results = []; }
+            //         $.each(results, function() {
+            //             try {
+            //                 var s = this.suggestion.data.toLowerCase();
+            //                 suggestions.push({label: s.replace(term, '<b>'+term+'</b>'), value: s});
+            //             } catch(e){}
+            //         });
+            //         cache[term] = suggestions;
+            //         response(suggestions);
+            //     }
+            // });
+        }
+        {/literal}
+
+        $(function() {
+	            
+	             $('#hero-demo').tagEditor({
+	             	{if $bagno}
+	             	initialTags: [{$bagno}],
+	             	{/if}
+	             	delimiter: ', ', 
+	             	placeholder: '最多可同时查询5条运单号，请以逗号、空格或回车键隔开。' }).css('display', 'none').attr('readonly', true);
+
+
+	             /*清除*/
+	            $('#clear').click(function() {
+	                var tags = $('#hero-demo').tagEditor('getTags')[0].tags;
+	                for (i=0;i<tags.length;i++){ $('#hero-demo').tagEditor('removeTag', tags[i]); }
+	            });
+
+	    }) 
+	         
+	         
+	       
+	      
+
+		</script>
+
+		{$footer}
+		
+		

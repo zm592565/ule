@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+/*
+ * 项目名称:悠乐1.0.1改版登录注册样式
+ * 项目说明:登录注册CSS样式
+ * 开发人员:344822559@qq.com
+ * 开发日期:2016-12-27
+ * */
+
+#login{
+	width: 500px;
+}
+#login .login_box{
+	width: 400px;
+	height: 98px;
+	border: 1px solid #eee;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	position: relative;
+	margin: 40px auto;
+	margin-bottom: 0px;
+}	
+#login .login_box p{
+	border-bottom: 1px solid #eee;
+	height: 48px;
+	line-height: 48px;
+	font-size: 14px;
+	color: #666;
+	padding: 0px;
+	margin: 0px;
+	padding-left: 70px;
+	position: relative;
+}
+#login .login_box p span{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	font-size: 15px;
+	padding: 0px 20px;
+}
+#login .login_box p input{
+	height: 39px;
+	font-size: 14px;
+	width: 100%;
+	border: none;
+	margin: 0px;
+	padding: 0px;
+	vertical-align: inherit;
+	/*margin-top: 5px;*/
+}
+
+#login .login_box p:last-child{
+	border-bottom: none;
+	height: 50px;
+}
+
+#login .remmber{
+	width: 370px;
+	margin-top: 20px;
+	height: 45px;
+	position: relative;
+	margin: 0 auto;
+	line-height: 45px;
+	padding-left: 20px;
+}
+#login .remmber input{
+	left: 0px;
+	top: 20px;
+	width: 15px;
+	height: 15px;
+	position: absolute;
+}
+#login .remmber span{
+	line-height: 45px;
+	text-align: left;
+	font-size: 14px;
+	margin: 0px;
+	padding: 0px;
+}
+#login .remmber a{
+	font-size: 14px;
+	float: right;
+	color: #999;
+}
+#login .btn_box{
+	width: 400px;
+	margin: 0 auto;
+	margin-bottom: 40px;
+}
+#login .btn_box button{
+	width: 150px;
+}
+#login .btn_box a{
+	width: 150px;
+}
