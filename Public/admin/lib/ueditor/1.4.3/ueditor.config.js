@@ -81,7 +81,7 @@
         //,focus:false //初始化时，是否让编辑器获得焦点true或false
 
         //如果自定义，最好给p标签如下的行高，要不输入中文时，会有跳动感
-        //,initialStyle:'p{line-height:1em}'//编辑器层级的基数,可以用来改变字体等
+        ,initialStyle:'p{line-height:1em;font-size:14px;font-family: 微软雅黑,microsoft yahei;}'//编辑器层级的基数,可以用来改变字体等
 
         //,iframeCssUrl: URL + '/themes/iframe.css' //给编辑器内部引入一个css文件
 
@@ -109,7 +109,7 @@
         //,emotionLocalization:false //是否开启表情本地化，默认关闭。若要开启请确保emotion文件夹下包含官网提供的images表情文件夹
 
         //粘贴只保留标签，去除标签所有属性
-        //,retainOnlyLabelPasted: false
+        ,retainOnlyLabelPasted: false
 
         //,pasteplain:false  //是否默认为纯文本粘贴。false为不使用纯文本粘贴，true为使用纯文本粘贴
         //纯文本粘贴模式下的过滤规则
@@ -177,19 +177,19 @@
 
         //fontfamily
         //字体设置 label留空支持多语言自动切换，若配置，则以配置值为准
-        //,'fontfamily':[
+        ,'fontfamily':[
         //    { label:'',name:'songti',val:'宋体,SimSun'},
         //    { label:'',name:'kaiti',val:'楷体,楷体_GB2312, SimKai'},
-        //    { label:'',name:'yahei',val:'微软雅黑,Microsoft YaHei'},
-        //    { label:'',name:'heiti',val:'黑体, SimHei'},
-        //    { label:'',name:'lishu',val:'隶书, SimLi'},
-        //    { label:'',name:'andaleMono',val:'andale mono'},
-        //    { label:'',name:'arial',val:'arial, helvetica,sans-serif'},
-        //    { label:'',name:'arialBlack',val:'arial black,avant garde'},
-        //    { label:'',name:'comicSansMs',val:'comic sans ms'},
-        //    { label:'',name:'impact',val:'impact,chicago'},
-        //    { label:'',name:'timesNewRoman',val:'times new roman'}
-        //]
+           { label:'',name:'yahei',val:'微软雅黑,Microsoft YaHei'},
+           { label:'',name:'heiti',val:'黑体, SimHei'},
+           { label:'',name:'lishu',val:'隶书, SimLi'},
+           { label:'',name:'andaleMono',val:'andale mono'},
+           { label:'',name:'arial',val:'arial, helvetica,sans-serif'},
+           { label:'',name:'arialBlack',val:'arial black,avant garde'},
+           { label:'',name:'comicSansMs',val:'comic sans ms'},
+           { label:'',name:'impact',val:'impact,chicago'},
+           { label:'',name:'timesNewRoman',val:'times new roman'}
+        ]
 
         //fontsize
         //字号
@@ -299,10 +299,10 @@
 
         //autotypeset
         //自动排版参数
-        //,autotypeset: {
-        //    mergeEmptyline: true,           //合并空行
+        ,autotypeset: {
+           mergeEmptyline: true,           //合并空行
         //    removeClass: true,              //去掉冗余的class
-        //    removeEmptyline: false,         //去掉空行
+           removeEmptyline: false,         //去掉空行
         //    textAlign:"left",               //段落的排版方式，可以是 left,right,center,justify 去掉这个属性表示不执行排版
         //    imageBlockLine: 'center',       //图片的浮动方式，独占一行剧中,左右浮动，默认: center,left,right,none 去掉这个属性表示不执行排版
         //    pasteFilter: false,             //根据规则过滤没事粘贴进来的内容
@@ -314,8 +314,8 @@
         //    indent: false,                  // 行首缩进
         //    indentValue : '2em',            //行首缩进的大小
         //    bdc2sb: false,
-        //    tobdc: false
-        //}
+           tobdc: false
+        }
 
         //tableDragable
         //表格是否可以拖拽
